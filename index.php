@@ -3,24 +3,35 @@
 include 'includes/header.php';
 ?>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".scroll").on('click', function(event) {
 
-<script>
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
 
- function colorChange(x) {
-     x.style.backgroundColor = "white";
- }
-    
-function focusOut(x) {
-    x.style.backgroundColor = "#dae6f0";
-}
-    
-$("#main-nav a").click(function(){
-    var divID = $(this).attr("href");
-    $("body").animate({scrollTop: $(divID).offset().top}, "slow");
-    return false;
-});
+              // Store hash
+              var hash = this.hash;
 
-</script>
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1000, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        
+    </script>
 
 <?php
 if (isset($_POST['submitted'])){
@@ -95,6 +106,8 @@ if (isset($_POST['submitted'])){
 <body> 
     
 <div id="content">
+    
+<div id="name">Justin Franzen</div>
         
 <div class="section">
     
@@ -108,11 +121,11 @@ if (isset($_POST['submitted'])){
         
         <div class="col-lg-8 col-md-8 col-sm-12">
         
-            <p>I first learned about web design in high school.  It wasn't much experience or hands on learning, however, it's where my interest was first sparked.  I attended  Waukesha County Technical College from 2008 to 2013.  I first received my Associate's degree in Marketing.  While I was taking courses for that degree, I took a few web design classes which is when my interest for web design grew immensely.  After finishing my Marketing degree, I went into the Web &amp; Digital Media Design program where both my web design and development skills truly began to grow.</p>
+            <p class="bio">I’m a mostly self taught web developer.  I graduated from UW-Milwaukee in December of 2016 with a Bachelors in Information Science & Technology.  Before attending UW-Milwaukee, I also attended Waukesha County Technical College where I received my Associates in Marketing.  I also took some web design classes and started my coding education as well.</p>
 
-                <br>
+             <p class="bio">I was stronger in HTML and CSS when I started the Web & Digital Media Design program at WCTC.  I also took some JavaScript and PHP classes, however, I struggled to understand the syntax and logic behind it.  As a result, I focused more on the design aspects of creating websites.  </p>
 
-             <p>While attending WCTC, I learned the basics of web design and good practices that of course have changed over the years.  Within my courses, I was taught how to work with other individuals as a team to create a website based on a client's needs and wants.  In addition to the design aspect, I also began to learn PHP and JavaScript. I utilized PHP and JavaScript throughout several small projects.  I did have my difficulties as anyone might have, however, this is where my desire to better understand other languages grew. </p>
+             <p class="bio">Fortunately, while attending UW-Milwaukee, my understanding of coding (JavaScript and PHP) improved.  I was able to understand and apply what I was unable to in my previous classes.  Although my design skills were still stronger, I was also able to apply more interactivity throughout my sites using JavaScript and PHP.  </p>
             
         </div>
         
@@ -124,13 +137,8 @@ if (isset($_POST['submitted'])){
     
     </div>
 
-                <br>
-
-             <p>After attending WCTC, I chose to continue my education at UW-Milwaukee in the Information Science &amp; Technology program with a focus in Web Design and Development.  Through additional web design courses, I was able to update my skills and learn the most up-to-date design practices.  In addition, I was able to refresh and expand my knowledge of additional languages including PHP, C#, and MYSQL.  I used both design and development to create small projects that have lead me to where I am today.  My strengths are definitely stronger in design (HTML and CSS), however, I do involve as many development aspects as I can where applicable. </p>
-
-                <br>
-
-            <p>My passion is creating websites whether it be through design or development. I enjoy seeing my work look and function correctly including the design aspect or development aspect.  Whether I spend 10 hours or 10 minutes on a task, I absolutely love the feeling of seeing my work displayed and functioning correctly.  My goal is to have the privelege of working for a company that creates websites through design or development with the latest technologies for all types of clients.</p>
+    <p>All of my work has been self taught after graduating.  If I’m unable to figure something out whether it be design or coding, I research any methods that might work and go from there.  Trial and error has taught me what to do and what to stay away from.  Being mostly self taught has helped me further understand the development side and how to problem solve better.  
+The code for all of my work can be viewed on my <a href="https://github.com/justinfranzen" target="_blank" id="github">github account</a>.  Most of my current work involves HTML, CSS, PHP, MySQL and some JavaScript (including JQuery).</p>
 
     <br>    
         
@@ -172,9 +180,9 @@ if (isset($_POST['submitted'])){
 
                     <?php
                 
-                $facts = array('Avid volleyball player', 'Bowler', 'Taekwondo 1st degree black belt');  
+                $facts = array('Avid volleyball player', 'Bowler', 'Taekwondo 2nd degree black belt');  
 
-                    for($i = 0; $i<count($facts); $i++)
+                    for($i = 0; $i < count($facts); $i++)
                     {
                         echo "<li> {$facts[$i]} </li>";
                     }
@@ -353,6 +361,7 @@ if (isset($_POST['submitted'])){
 </div>
     
 </body>  
+
 <?php
 include 'includes/footer.php';
 ?>

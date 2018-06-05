@@ -1,5 +1,6 @@
 html, body {
     overflow-x: hidden;
+    height: 100%;
 }
 
 /*------------------------------*/
@@ -129,10 +130,16 @@ html, body {
 }
 
 #name {
-    margin-bottom: 50px;
+    padding: 60px 0;
     text-align: center;
     font-size: 50px;
     font-family: 'Merriweather Sans', sans-serif;
+    background: rgba(162, 192, 217, .5);
+    margin-top: -10px;
+}
+
+#github:hover {
+    text-decoration: none;
 }
 
 .quick-link:hover {
@@ -142,6 +149,10 @@ html, body {
 
 p {
     line-height: 1.8;
+}
+
+.bio {
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -169,7 +180,7 @@ h2 {
 
 #justin {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     width: 250px;
     max-width: 100%;
 }
@@ -195,6 +206,7 @@ h2 {
     width: 100%;
     margin: 0 auto;
     padding: 60px 5%;
+    font-family: 'Lato', sans-serif;
 }
 
 .weblink:hover {
@@ -269,20 +281,8 @@ figcaption a {
 
 .site {
     max-width: 100%;
-    box-shadow: 0px 0px 35px 0px gray !important;
+    box-shadow: 0px 10px 35px 0px gray !important;
 }
-
-.site:hover {
-    box-shadow: 0 5px 10px 5px #BEBEBE;
-    transition-duration: 0.5s;
-}
-
-.site:not(:hover) {
-    box-shadow: none;
-    transition-duration: .5s;
-}
-
-
 
 /*-------------------------------*/
 /*--------FORM SECTION-----------*/
@@ -295,7 +295,7 @@ figcaption a {
     margin-bottom: 100px;
     background: white;
     padding: 40px;
-    box-shadow: 0px 5px 15px 3px gray;
+    box-shadow: 0px 0px 50px 0px gray;
     border-radius: 10px;
      margin: 50px auto;
 }
@@ -331,12 +331,12 @@ textarea {
 }
 
 #submit {
-    padding: 5px;
-    width: 115px;
+    height: 50px;
+    width: 125px;
     border: 1.5px solid #7da7ca;
-    background: #7da7ca !important;
+    background: rgb(218, 230, 240) !important;
     color: black;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 18px !important;
 }
 
