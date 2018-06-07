@@ -6,7 +6,7 @@ include 'includes/header.php';
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         
-        $(document).ready(function(){
+       /* $(document).ready(function(){
           // Add smooth scrolling to all links
           $(".scroll").on('click', function(event) {
 
@@ -29,7 +29,7 @@ include 'includes/header.php';
               });
             } // End if
           });
-        });
+        });*/
         
     </script>
 
@@ -103,11 +103,13 @@ if (isset($_POST['submitted'])){
 
 ?>
 
-<body> 
+<body>
+    
+<h1 id="name">Justin Franzen</h1>
+    
+<div id="bgimg-name"></div>
     
 <div id="content">
-    
-<div id="name">Justin Franzen</div>
         
 <div class="section">
     

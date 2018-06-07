@@ -1,6 +1,9 @@
 html, body {
     overflow-x: hidden;
-    height: 100%;
+}
+
+.transition {
+    transition-duration: .5s;
 }
 
 /*------------------------------*/
@@ -32,7 +35,6 @@ html, body {
     display: block;
     position: fixed;
     z-index: 50;
-    background: #800000;
     margin: 0;
     top: 0px;
 }
@@ -58,14 +60,14 @@ html, body {
 }
 
 #main-nav li a:hover {
-    color: #a2c0d9 !important;
-    transition: ease-in .2s;
+    color: lightblue !important;
+    transition-duration: .5s;
     text-decoration: none;
 }
 
 #main-nav li a:not(:hover) {
     color: white;
-    transition: ease-out .2s;
+    transition-duration: .5s;
 }
 
 #main {
@@ -85,6 +87,14 @@ html, body {
     width: 450px;
     margin-top: 150px;
     display: none;
+}
+
+#bgimg-name {
+    background-image: url('../images/bgimg-name.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
 }
 
 .main-name {
@@ -130,12 +140,13 @@ html, body {
 }
 
 #name {
-    padding: 60px 0;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Merriweather Sans', sans-serif;
-    background: rgba(162, 192, 217, .5);
-    margin-top: -10px;
+    margin-top: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 #github:hover {
@@ -187,7 +198,7 @@ h2 {
 
 #content {
     width: 100%;
-    margin: 120px auto 25px auto !important;
+    margin: 20px auto 25px auto !important;
 }
 
 #about, #work, #contact {
@@ -473,6 +484,7 @@ textarea {
             cursor: pointer;
             border-radius: 5px;
             font-size: 50px;
+            color: maroon;
         }
 
     /* Dropdown button on hover & focus */
@@ -588,7 +600,9 @@ textarea {
             cursor: pointer;
             border-radius: 5px;
             font-size: 50px;
+            color: maroon;
         }
+    
 
     /* Dropdown button on hover & focus */
     .dropbtn:hover, .dropbtn:focus {
@@ -705,6 +719,7 @@ textarea {
             cursor: pointer;
             border-radius: 5px;
             font-size: 50px;
+            color: maroon;
         }
     
 
@@ -779,6 +794,15 @@ textarea {
     margin-top: 150px;
     transition-duration: .3s;
 }
+    
+    #bgimg-name {
+        height: 600px;
+        transition-duration: .5s;
+    }
+    
+    #name {
+        transition-duration: .5s;
+    }
     
       #h1 {
         margin-left: 5%;
@@ -855,6 +879,7 @@ textarea {
             cursor: pointer;
             border-radius: 5px;
             font-size: 50px;
+            color: maroon;
     }
 
     /* Dropdown button on hover & focus */
@@ -938,6 +963,17 @@ textarea {
         height: 110px;
     }
     
+    #bgimg-name {
+        height: 400px;
+        transition-duration: .5s;
+    }
+    
+     #name {
+        margin-top: 180px;
+         font-size: 40px;
+        transition-duration: .5s;
+    }
+    
       #h1 {
         margin-left: 5%;
         color: #00bfff;
@@ -955,11 +991,7 @@ textarea {
     
     #content {
        width: 100%;
-        margin: 100px auto -20px auto !important;
-    }
-    
-    #name {
-        font-size: 40px;
+        margin: 0 auto -20px auto !important;
     }
     
     #image {
@@ -1032,6 +1064,7 @@ textarea {
         border: none;
         cursor: pointer;
         border-radius: 5px;
+        color: maroon;
     }
 
     /* Dropdown button on hover & focus */
@@ -1108,6 +1141,14 @@ textarea {
      #header {
         height: 110px;
     }
+    
+    #bgimg-name {
+        height: 400px;
+    }
+    
+    #name {
+        margin-top: 180px;
+    }
 
       #h1 {
         margin-left: 5%;
@@ -1133,7 +1174,7 @@ textarea {
     
     #content {
        width: 100%;
-        margin: 100px auto -20px auto !important;
+        margin: 0 auto -20px auto !important;
     }
     
     #image {
