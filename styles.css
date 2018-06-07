@@ -94,7 +94,7 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 100vh;
 }
 
 .main-name {
@@ -143,7 +143,7 @@ html, body {
     text-align: center;
     font-size: 60px;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 250px;
+    margin-top: 325px;
     position: absolute;
     left: 0;
     right: 0;
@@ -668,6 +668,10 @@ textarea {
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
     .show {display:block;}
     
+    #bgimg-name, #name {
+        transition-duration: .5s;
+    }
+    
       #h1 {
         color: #00bfff;
         font-size: 40px;
@@ -796,11 +800,12 @@ textarea {
 }
     
     #bgimg-name {
-        height: 600px;
+        height: 500px;
         transition-duration: .5s;
     }
     
     #name {
+        margin-top: 215px;
         transition-duration: .5s;
     }
     
