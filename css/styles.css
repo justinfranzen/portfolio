@@ -1,0 +1,2055 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.transition {
+    transition-duration: .5s;
+}
+
+#video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-background-color {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(162, 192, 217, .6);
+}
+
+#mobile-background {
+    display: none;
+}
+
+.home {
+    margin: 0 auto;
+    }
+    
+.col-lg-4.col-md-4.col-sm-12.column {
+    padding: 0;
+}
+    
+    #main-title {
+        padding: 15px 0;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-size: 56px;
+        background: rgb(128, 0, 0);
+        top: -20px;
+    }
+    
+    .section-title {
+        text-align: center;
+        padding-top: 130px;
+        margin-top: 0;
+        color: rgb(128, 0, 0);
+    }
+    
+    #portfolio-about p {
+        padding: 0 20px;
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    #portfolio-about, #portfolio-portfolio, #portfolio-contact {
+        height: 100vh;
+    }
+    
+    #portfolio-about {
+        background-color: rgba(211,211,211);
+        background-image: url(../images/about.png);
+        background-size: cover;
+    }
+    
+    #portfolio-portfolio {
+        background: rgba(162, 192, 217, .5);
+        /*background-image: url(portfolio.png);
+        background-size: cover;*/
+    }
+    
+    #portfolio-contact {
+        background: rgba(128, 0, 0, .5)
+        /*background-image: url(contact-form.png);
+        background-size: cover;*/
+    }
+    
+    .portfolio {
+        width: 250px;
+        margin: 30px auto;
+        display: block;
+        box-shadow: 0px 5px 20px 0px gray
+    }
+    
+    #contact-form {
+        width: 300px;
+        margin: 50px auto;
+        display: block;
+        box-shadow: 0px 5px 20px darkslategray;
+    }
+
+/*------------------------------*/
+/*-------MOBILE NAVIGATION------*/
+/*------------------------------*/
+
+#myNav, #mobile-nav {
+    display: none;
+}
+
+.dropdown {
+    display:none;
+}
+
+#wrapper {
+    margin: 0;
+}
+
+#menuToggle {
+    display:none;
+}
+.menu-icon{
+    display:none;
+    }
+
+/*-------------------------*/
+/*-------HEADER-----------*/
+/*-------------------------*/
+
+#header, #header2 {
+    width: 100%;
+    height: 90px;
+    display: block;
+    position: fixed;
+    z-index: 50;
+    margin: 0;
+    top: 0px;
+}
+
+#header2 {
+    background: rgb(128, 0, 0);
+}
+
+#header2 #main-nav li a {
+    color: white !important;
+}
+
+#main-nav {
+    float: right;
+    margin-top: 35px;
+    margin-right: 8%;
+}
+
+#main-nav li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#main-nav li a {
+    color: white;   
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+#main-nav li a:hover {
+    color: lightblue !important;
+    transition-duration: .5s;
+    text-decoration: none;
+}
+
+#main-nav li a:not(:hover) {
+    color: white;
+    transition-duration: .5s;
+}
+
+#main {
+    background: maroon;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#main-logo {
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+}
+
+#logo-img {
+    width: 450px;
+    margin-top: 150px;
+    display: none;
+}
+
+#bgimg-name {
+    background-image: url('../images/bgimg-name.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-name {
+    color: #a2c0d9 !important;
+    font-size: 60px;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    background: white;
+    margin-left: 5%;
+    float: left;
+    border-radius: 50%;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.f {
+    margin-left: -5px;
+}
+
+#nav-h1 {
+    margin: 8px auto 0 auto;
+    color: #a2c0d9 !important;
+    width: 65px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#nav-h1 a {
+    color: #a2c0d9 !important;
+}
+
+#nav-h1 a:hover {
+    color: #a2c0d9 !important;
+    text-decoration: none;
+}
+
+#nav-h1:before {
+    background: none;
+}
+
+#name {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+    color: white;
+    width: 470px;
+    margin: 300px auto 0 auto;
+    text-shadow: 3px 3px black;
+    z-index: 45;
+}
+
+.title {
+    font-size: 36px;
+}
+
+#github:hover {
+    text-decoration: none;
+}
+
+.quick-link:hover {
+    text-decoration: none;
+    color: #0099ff;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.bio {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px !important;
+    margin-bottom: 40px !important;
+    font-family: 'Lato', sans-serif;
+}
+
+.row.facts {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#skillsSection, #skillsSection2 {
+    line-height: .8;
+}
+
+#wordpress {
+    margin-top: -12px;
+    margin-left: 15px;
+}
+
+.line {
+    border: 1.5px solid maroon;
+    width: 100px;
+    margin: -20px auto 50px auto;
+}
+
+#justin {
+    display: block;
+    margin: 0 auto 30px;
+    width: 300px;
+    border-radius: 10%;
+    box-shadow: 0px 5px 25px 0px gray;
+}
+
+#content {
+    width: 100%;
+    margin: 20px auto 0 auto !important;
+}
+
+#about, #work, #contact {
+    margin-top: -160px;
+    padding-top: 160px;
+}
+
+#contact {
+    background-image: url(../images/lambeau3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+}
+
+#contact-title {
+    margin-top: -70px;
+}
+
+.section {
+    font-family: 'Lato', sans-serif;
+    padding: 0 20px;
+    font-size: 16px;
+    width: 1024px;
+    margin: 60px auto;
+}
+
+.section2 {
+    background: rgba(162, 192, 217, .3);
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.section2-content {
+    width: 1024px;
+    margin: 50px auto;
+}
+
+.content {
+    width: 1024px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.weblink:hover {
+    text-decoration: none;
+}
+
+#languages {
+    margin-top: 50px;
+}
+
+.language {
+    width: 150px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    display: inline-flex;
+    margin-right: auto;
+}
+
+.language-type {
+    display: block;
+    text-align: center;
+}
+
+.html, .php, .mysql {
+    opacity: 0;
+}
+
+#thankyou {
+    width: 1024px;
+    margin: 300px auto 200px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#image {
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.row {
+    margin-left: -10px;
+    margin-right: -11px !important;
+}
+
+.centered {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+figcaption {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+figcaption a {
+    color: black;
+}
+
+.original {
+    text-decoration: underline;
+}
+
+/*----------------------------*/
+/*-------PORTFOIO PAGE--------*/
+/*----------------------------*/
+
+.site {
+    max-width: 100%;
+    box-shadow: 0px 10px 35px 0px gray !important;
+}
+
+/*-------------------------------*/
+/*--------FORM SECTION-----------*/
+/*-------------------------------*/
+
+ #myForm {
+    max-width: 600px;
+    padding: 5%;
+    border-radius: 10px;
+    margin: -25px auto 50px auto;
+}
+
+label {
+    font-weight: 500 !important;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid maroon;
+    line-height: 35px !important;
+    padding-left: 10px;
+    font-size: 15px !important;
+    background: rgba(162, 192, 217, .3);
+    margin-bottom: 5px !important;
+    border-radius: 3px;
+}
+
+textarea {
+    border: 1px solid maroon;
+    background: rgba(162, 192, 217, .3);
+    padding-left: 8px;
+    padding-top: 5px;
+    font-size: 16px !important;
+    border-radius: 3px;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+}
+
+#submit {
+    height: 50px;
+    width: 125px;
+    border: 1px solid maroon;;
+    background: rgba(162, 192, 217, .3) !important;
+    color: black;
+    border-radius: 3px;
+    font-size: 18px !important;
+}
+
+#submit:hover {
+    background: maroon !important;
+    color: white;
+    transition-duration: .5s;
+}
+
+#submit:not(hover) {
+    transition-duration: .5s;
+}
+
+/*-----------------------*/
+/*--------FOOTER---------*/
+/*-----------------------*/
+
+#footer {
+    background: #800000;
+    height: 200px;
+    padding-bottom: 30px;
+    margin: 0;
+    width: 100%;
+}
+
+  #footer-contact-info {
+    width: 215px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    font-size: 22px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+      line-height: 1.8;
+}
+
+#footer-contact-info a {
+    color: white; 
+    padding: 10px;
+}
+
+#footer-contact-info a:hover {
+    color: #00bfff; 
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+#footer-contact-info a:not(:hover) {
+    transition-duration: .3s;
+}
+
+.glyphicon.glyphicon-earphone {
+        font-size: 18px;
+        color: white;
+        margin-left: 15px;
+}
+
+.glyphicon.glyphicon-envelope {
+        font-size: 18px;
+        color: white;
+}
+
+.fa.fa-linkedin-square, .fa.fa-github {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.fa.fa-linkedin-square:hover {
+    transition-duration: .3s;
+}
+
+.fa.fa-linkedin-square:not(:hover) {
+    transition-duration: .3s;
+}
+
+.glyphicon.glyphicon-envelope {
+
+    color: maroon;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.contact {
+    margin-top: 70px;
+}
+
+#contact-info {
+    text-align: center;
+}
+
+#email {
+    color: black;
+}
+
+#email:hover {
+    color: #0077B5;
+    text-decoration: none;
+}
+
+#contact-icons {
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.linkedin {
+    margin-right: 20px;
+}
+
+.linkedin:hover {
+    color: #0077B5;
+    transition-duration: .3s;
+}
+
+.github:hover {
+    color: #333;
+    transition-duration: .3s;
+}
+
+.linkedin:not(:hover), .github:not(:hover) {
+    transition-duration: .5s;
+}
+
+.contact-icon {
+    color: maroon;
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+    
+    #menuToggle {
+        display:none;
+}
+    .menu-icon{
+        display:none;
+    }
+    
+      #h1 {
+        color: #00bfff;
+        font-size: 45px;
+        margin-left: 3%;
+        margin-top: 20px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-shadow: 1px 1px white;
+    }
+    
+    #main-nav li {
+        display: inline-block;
+        padding-left: 15px;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+    }
+    
+    #main-nav li a {
+        color: white;   
+        text-decoration: none;
+        padding: 15px;
+        font-size: 16px;
+        letter-spacing: 2px;
+}
+
+#main-nav li a:hover {
+    color: lightblue;
+    transition-duration: .5s;
+    text-decoration: none;
+}
+
+#main-nav li a:not(:hover) {
+    color: white;
+    transition-duration: .5s;
+}
+    
+    .centered {
+        margin-bottom: 30px;
+    }
+    
+.section2 {
+    background: rgba(162, 192, 217, .3);
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.section2-content {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 60px 20px 20px;
+}
+    
+#contact {
+    height: inherit;
+}
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    
+#video, #video-background-color {
+    display: none;
+}
+    
+#mobile-background {
+    display: block;
+    background-image: url(../images/jump_kick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh
+}
+    
+     #thankyou {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+.section {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    margin: 60px auto;
+}
+    
+.section2-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px 30px;
+}
+    
+ #mobile-nav {
+    background: maroon;
+    line-height: 35px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+    
+#name {
+    background: none;
+}
+    
+#contact {
+    background-image: url(../images/lambeau2.jpg);
+    background-attachment: inherit;
+    height: inherit;
+}
+    
+#myForm {
+    margin-bottom: 50px;
+}
+    
+.content {
+    width: 100%;
+}
+    
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+#video {
+    display: none;
+}
+    
+#mobile-background {
+    display: block;
+    background-image: url(../images/jump_kick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh
+}
+    
+    #mobile-nav {
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 20px;
+        font-size: 45px !important;
+    }
+    
+    #myNav {
+        display: block;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 0px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 50, 120, 0.95); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+    
+    .dropbtn {
+            background: transparent;
+            padding: 0px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 50px;
+            color: black;
+        }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        display: block;
+        float: right;
+        margin-right: 5%;
+        cursor: pointer;
+        margin-top: 15px;
+        color: rgba(162, 192, 217, 1);
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+     .dropdown-content {
+        display: none;
+        list-style-type: none;
+        position: fixed;
+        background-color: maroon;
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        margin-left: auto;
+        top: 107px;
+        height: auto;
+        left: 0;
+        right: 0;
+         padding-bottom: 5px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+        .icon {
+            height:30px;
+            width: 30px;
+        }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover, .dropdown-content li a:focus {
+        color: rgba(162, 192, 217, 1);
+        transition: ease-in .2s;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:not(:hover) {
+        color: white;
+        transition: ease-out .2s;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+    
+      #h1 {
+        color: #00bfff;
+        font-size: 40px;
+        margin-top: 15px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-shadow: 1px 1px white;
+    }
+    
+    #main-nav {
+        display: none;
+    }
+    
+    #content {
+        width: 100%;
+        margin: 180px auto 30px auto;
+    }
+    
+    .img-responsive.taekwondo {
+        margin-top: 25px;
+    }
+
+    figcaption {
+        margin-bottom: 40px;
+    }
+    
+    .centered {
+        margin-bottom: 0;
+    }
+    
+      #footer-contact-info {
+        width: 240px;
+          text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 35px;
+        font-size: 22px;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        }
+    
+}
+   
+@media only screen and (min-width: 668px) and (max-width: 767px) {
+    
+    #mobile-nav {
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 20px;
+        font-size: 45px !important;
+    }
+    
+    #myNav {
+        display: block;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: -20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 50, 120, 0.95); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+    
+  .dropbtn {
+            background: transparent;
+            padding: 0px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 50px;
+            color: black;
+        }
+    
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        display: inline-block;
+        float: right;
+        margin-right: 5%;
+        cursor: pointer;
+        margin-top: 15px;
+        color: rgba(162, 192, 217, 1);
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+     .dropdown-content {
+        display: none;
+        list-style-type: none;
+        position: fixed;
+        background-color: maroon;
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        margin-left: auto;
+        top: 107px;
+        height: auto;
+        left: 0;
+        right: 0;
+         padding-bottom: 5px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+        .icon {
+            height:30px;
+            width: 30px;
+        }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover, .dropdown-content li a:focus {
+        color: rgba(162, 192, 217, 1);
+        transition: ease-in .3s;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:not(:hover) {
+        color: white;
+        transition: ease-out .3s;
+    }
+    
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+    
+    #bgimg-name, #name {
+        transition-duration: .5s;
+    }
+    
+      #h1 {
+        color: #00bfff;
+        font-size: 40px;
+        margin-top: 15px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-shadow: 1px 1px white;
+    }
+    
+    #main-nav {
+        display: none;
+    }
+    
+    #content {
+        width: 100%;
+        margin: 180px auto 30px auto;
+    }
+    
+    .contact {
+        margin-top: 50px;
+    }
+    
+    .img-responsive.taekwondo {
+        margin-top: 25px;
+    }
+    
+    .centered {
+        margin-bottom: 0;
+    }
+    
+    figcaption {
+        margin-bottom: 40px;
+    }
+    
+      #footer-contact-info {
+        width: 215px;
+          text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        font-size: 22px;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+    }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 767px) and (orientation: landscape) {
+    
+    #name {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    
+    #mobile-nav {
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 20px;
+        font-size: 45px !important;
+    }
+    
+    #myNav {
+        display: block;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: -20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 50, 120, 0.95); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+ 
+    .dropbtn {
+            background: transparent;
+            padding: 0px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 50px;
+            color: black;
+        }
+    
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        display: inline-block;
+        float: right;
+        margin-right: 5%;
+        cursor: pointer;
+        margin-top: 15px;
+        color: rgba(162, 192, 217, 1);
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+   
+       .dropdown-content {
+        display: none;
+        list-style-type: none;
+        position: fixed;
+        background-color: maroon;
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        margin-left: auto;
+        top: 107px;
+        height: auto;
+        padding-bottom: 5px;
+        left: 0;
+        right: 0;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+
+    /* Links inside the dropdown */
+ 
+        .icon {
+            height:30px;
+            width: 30px;
+        }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover, .dropdown-content li a:focus {
+        color: rgba(162, 192, 217, 1);
+        transition: ease-in .3s;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:not(:hover) {
+        color: white;
+        transition: ease-out .3s;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+    
+#logo-img {
+    width: 450px;
+    margin-top: 150px;
+    transition-duration: .3s;
+}
+    
+    #bgimg-name {
+        height: 500px;
+        transition-duration: .5s;
+    }
+    
+    #name {
+        margin-top: 270px;
+        transition-duration: .5s;
+        width: 470px;
+    }
+    
+    .title {
+        font-size: 36px;
+        transition-duration: .5s;
+    }
+    
+      #h1 {
+        margin-left: 5%;
+        color: #00bfff;
+        width: 321px;
+        font-size: 37px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Merriweather Sans', sans-serif; 
+        text-shadow: 1px 1px white;
+    }
+    
+    #main-nav {
+        display: none;
+    }
+    
+    #content {
+        width: 100%;
+        margin: 180px auto 30px auto;
+    }
+    
+    .contact {
+        margin-top: 50px;
+    }
+    
+    .img-responsive.taekwondo {
+        margin-top: 25px;
+    }
+    
+    .centered {
+        margin-bottom: 0;
+    }
+    
+    figcaption {
+        margin-bottom: 40px;
+    }
+  
+      #footer-contact-info {
+        width: 215px;
+          text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        font-size: 22px;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+    }
+    
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+    
+    #bgimg-name {
+        height: 100vh;
+    }
+    
+    #name {
+        margin-top: 175px;
+    }
+    
+    #mobile-nav {
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 20px;
+        font-size: 45px !important;
+    }
+    
+    #myNav {
+        display: block;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: -20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 50, 120, 0.95); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+
+.dropdown-content {
+    display: none;
+    list-style-type: none;
+    position: fixed;
+    background-color: maroon;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: auto;
+    top: 128px;
+    height: 185px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+     #mobile-nav {
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 20px;
+        font-size: 45px !important;
+    }
+    
+    #myNav {
+        display: block;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: -20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 50, 120, 0.95); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+    
+        .dropbtn {
+            background: transparent;
+            padding: 0px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 50px;
+            color: black;
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+   
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        display: inline-block;
+        float: right;
+        margin-right: 5%;
+        cursor: pointer;
+        margin-top: 15px;
+        color: rgba(162, 192, 217, 1);
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        top: 107px;
+        list-style-type: none;
+        position: fixed;
+        width: auto;
+        margin-left: auto;
+        background-color: maroon;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        height: auto;
+        padding-bottom: 5px;
+        left: 0;
+        right: 0;
+
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    /* Links inside the dropdown */
+
+
+        .icon {
+            height:30px;
+            width: 30px;
+        }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        color: rgba(162, 192, 217, 1);
+        transition: ease-in .2s;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:not(:hover) {
+        color: white;
+        transition: ease-out .2s;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+    
+#logo-img {
+        width: 300px;
+        margin-top: 200px;
+        transition-duration: .3s: 
+    }
+    
+    #nav-h1 {
+        font-size: 50px;
+    }
+    
+    #header {
+        height: 90px;
+    }
+    
+    #bgimg-name {
+        height: 400px;
+        transition-duration: .5s;
+    }
+    
+     #name {
+        margin-top: 270px;
+         font-size: 40px;
+        transition-duration: .5s;
+         width: 320px;
+    }
+    
+     .title {
+        font-size: 28px;
+         transition-duration: .5s;
+    }
+    
+      #h1 {
+        margin-left: 5%;
+        color: #00bfff;
+        width: 321px;
+        font-size: 37px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-shadow: 1px 1px white;
+    }
+    
+    #main-nav {
+        display: none;
+    }
+    
+    #content {
+       width: 100%;
+        margin: 0 auto -20px auto !important;
+    }
+    
+    .contact {
+        margin-top: 50px;
+    }
+    
+    #image {
+        margin-top: 25px;
+    }
+    
+    .img-responsive.taekwondo {
+        margin-top: 25px;
+    }
+    
+    .centered {
+        margin-bottom: 0;
+    }
+    
+    figcaption {
+        margin-bottom: 40px;
+    }
+    
+    #footer-contact-info {
+        width: 215px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        font-size: 22px;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+    .divider {
+        display:none;
+    }
+    
+    .glyphicon.glyphicon-earphone {
+        margin-left: 30px;
+        font-size: 17px;
+        color: white;
+}
+    
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    
+    #bgimg-name {
+        height: 100vh;
+    }
+    
+    #name {
+        margin-top: 140px;
+    }
+    
+    #mobile-nav {
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 20px;
+        font-size: 45px !important;
+    }
+    
+    #myNav {
+        display: block;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: -20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 50, 120, 0.95); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+    
+.dropdown-content {
+    display: none;
+    top: 107px;
+    list-style-type: none;
+    position: fixed;
+    width: auto;
+    margin-left: auto;
+    background-color: maroon;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    height: 205px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+    
+}
+    
+@media only screen and (min-width: 100px) and (max-width: 375px) {
+    
+    #mobile-nav {
+        display: block;
+        float: right;
+        margin-right: 25px;
+        margin-top: 20px;
+        font-size: 45px !important;
+    }
+    
+    #myNav {
+        display: block;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: -20px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 50, 120, 0.95); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+        
+    .dropbtn {
+        background: transparent;
+        padding: 0px;
+        font-size: 50px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        color: black;
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        display: inline-block;
+        float: right;
+        margin-right: 5%;
+        cursor: pointer;
+        margin-top: 15px;
+        color: rgba(162, 192, 217, 1);
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        list-style-type: none;
+        position: fixed;
+        width: auto;
+        margin-left: auto;
+        background-color: maroon;
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        height: auto;
+        top: 107px;
+        padding-bottom: 5px;
+        left: 0;
+        right: 0;
+
+    }
+    
+    .dropdown-content li a {
+        color: white;
+        padding: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+        .icon {
+            height:30px;
+            width: 30px;
+        }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content li a:hover {
+        color: #00bfff;
+        text-decoration: none;
+    }
+
+    .dropdown-content li a:not(:hover) {
+        color: white;
+    }
+    
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+    
+    #logo-img {
+        width: 300px;
+        margin-top: 200px;
+    }
+    
+#nav-h1 {
+    margin: 8px auto 0 auto;
+    text-align: center;
+}
+    
+     #header {
+        height: 90px;
+    }
+    
+    #bgimg-name {
+        height: 400px;
+    }
+    
+    #name {
+        margin-top: 270px;
+        font-size: 40px;
+        width: 320px;
+    }
+    
+     .title {
+        font-size: 28px;
+    }
+
+      #h1 {
+        margin-left: 5%;
+        color: #00bfff;
+        width: 125px;
+        font-size: 34px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-shadow: 1px 1px white;
+        text-align: center;
+    }
+    
+    #main-nav {
+        display: none;
+    }
+    
+    #name {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    #content {
+       width: 100%;
+        margin: 0 auto -20px auto !important;
+    }
+    
+    .contact {
+        margin-top: 50px;
+    }
+    
+    #image {
+        margin-top: 25px;
+    }
+    
+    .centered {
+        margin-bottom: 0;
+    }
+    
+    figcaption {
+        margin-bottom: 40px;
+    }
+    
+    #footer-contact-info {
+        width: 215px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        font-size: 22px;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+    
+    .glyphicon.glyphicon-earphone {
+        margin-left: 30px;
+        font-size: 17px;
+        color: white;
+}
+    
+}
